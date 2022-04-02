@@ -2,7 +2,7 @@
 // @name         template
 // @namespace    http://tampermonkey.net/
 // @version      1.0 plain
-// @description  Destiny r/place template
+// @description  r/place template
 // @author       docmod
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
@@ -13,7 +13,7 @@ if (window.top !== window.self) {
             document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
         (function () {
             const i = document.createElement("img");
-            i.src = "https://raw.githubusercontent.com/Anticept/r-place/template.png";
+            i.src = "https://raw.githubusercontent.com/docmod/r-place/template.png";
             i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
             console.log(i);
             return i;
