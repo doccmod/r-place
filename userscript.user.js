@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         template
 // @namespace    http://tampermonkey.net/
-// @version      1.6 plain
+// @version      1.0 helm
 // @description  r/place template
 // @author       docmod
 // @match        https://hot-potato.reddit.com/embed*
@@ -13,7 +13,7 @@ if (window.top !== window.self) {
             document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
         (function () {
             const i = document.createElement("img");
-            i.src = "https://raw.githubusercontent.com/doccmod/r-place/main/templateV1.6.png";
+            i.src = "https://raw.githubusercontent.com/doccmod/r-place/main/helmTemplateV1.0.png";
             i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;";
             console.log(i);
             return i;
